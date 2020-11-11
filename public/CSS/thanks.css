@@ -1,0 +1,85 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Changa:wght@600&display=swap');
+
+/* Variables CSS */
+:root {
+  --header-height: 3.3rem;
+  --font-medium:500;
+}
+/* Colors */
+:root {
+  --first-color: #5361ff;
+  --touch-color: #F3696E;
+  --white-color: #FAFAFF;
+  --dark-color: #2A3B47;
+  --text-color: #697477;
+}
+/* Font  */
+:root {
+  --body-font:'Cairo', sans-serif;
+  --h2-font-size: 1.8rem;
+  --big-font-size: 4rem;
+  --normal-font-size: 1.5rem;
+}
+@media screen and (min-width:768px){
+  :root {
+    --body-font:'Cairo', sans-serif;
+    --h2-font-size: 3rem;
+    --big-font-size: 7.5rem;
+    --normal-font-size: 2rem;
+  }  
+}
+/* Margins */
+:root {
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2.5rem;
+}
+
+/* BASE CSS */
+*, ::before,::after {
+  box-sizing: border-box;
+}
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--white-color);
+  line-height: 1.6;
+  background-color: var(--first-color);
+}
+h2{
+  font-family:'Changa', sans-serif;
+  font-size: var(--h2-font-size);
+}
+h2, p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--touch-color);
+  margin-top: var(--mb-4);
+}
+.bd-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding: var(--mb-4);
+}
+.thanks__text {
+  text-align: center;
+  padding: var(--mb-2) 0;
+  font-size: var(--normal-font-size);
+}
+.thanks__icon {
+  font-size: 2.5rem;
+  color: var(--touch-color);
+  padding: var(--mb-3) 0;
+}
+.home {
+  font-size: 2rem;
+}
